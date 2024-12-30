@@ -1,0 +1,52 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    overflow: none;
+  }
+  
+  .about h2 {
+    padding: 1rem;
+  }
+  
+  .about p {
+    margin: 1rem;
+    padding: 1rem;
+    width: 50%;
+  }
+  
+  .container_about {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .container_about p {
+    font-size: 1.3rem;
+  }
+  
+  .container_IMG .imagem {
+    max-width: 35vh;
+    box-shadow: 5px 5px 30px -10px;
+  }
+  
+  @media (max-width: 768px) {
+    .about {
+      overflow: none;
+    }
+  
+    .container_about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: none;
+    }
+  
+    .container {
+      overflow: none;
+    }
+  }
+  

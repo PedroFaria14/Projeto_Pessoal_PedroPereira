@@ -1,0 +1,114 @@
+/* Estilos para o card */
+.container,.menuOpen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  animation: slide-up 0.5s ease; /* Animação de entrada */
+  margin-top: 0;
+  overflow-x: none;
+}
+
+.container h3 {
+  font-size: 2rem;
+  text-align: center;
+
+}
+
+.container h5 {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.cards {
+  display: flex;
+  padding: 1rem;
+  gap: 1.5rem;
+  border-radius: 1rem;
+  justify-content: center;
+
+  overflow-x: auto; 
+  border-radius: 10px;
+  margin-top: 0;
+}
+
+.cards section {
+  width: 200px; 
+  flex: 0 0 auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgb(0, 0, 0,0.2); 
+  color: white; 
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  max-height: 468px;
+  border: 1px solid rgb(255, 255, 255,0.3);
+  border-radius: 10px;
+}
+
+.cards section:first-child {
+  margin-left: 0;
+}
+
+.cards section button {
+
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 32px;
+  border: 0;
+  cursor: pointer;
+  font-size: 80%;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+
+.cards section.card1 button {
+  background-image: linear-gradient(45deg,   #003366,#027497, #00ffff);
+}
+
+.cards section.card1 {
+  box-shadow: 10px 10px 10px -5px #003366;
+  border-radius: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  .cards section {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+
+  .cards section:last-child {
+    margin-bottom: 0;
+  }
+
+  .cards section button {
+    font-size: 70%;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .container.menuOpen {
+    transition: margin-top 0.5s;
+    margin-top: 13rem; 
+    overflow-y: none;
+    overflow-x: none;
+    
+  }
+
+  .container{
+    overflow: none; 
+  }
+}
+
+

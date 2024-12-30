@@ -1,0 +1,184 @@
+/* Estilos para o card */
+.container,.menuOpen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    animation: slide-up 0.5s ease; /* Animação de entrada */
+    margin-top: 0;
+  }
+  
+  .container h3 {
+    font-size: 2rem;
+    text-align: center;
+  
+  }
+  
+  .container h5 {
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    
+}
+
+.cards section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(45deg, #003366 , #027497) ;
+    border-radius: 20px; 
+    max-height: 300px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s; 
+    max-width: 300px;
+    position: relative; 
+    overflow: hidden; 
+    height: 250px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards section::before, .cards section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: border-color 0.3s;
+}
+
+.cards section::before {
+    border-image: linear-gradient(45deg, #ff00cc, #3333ff, #00ccff, #ff0066) 1;
+}
+
+.cards section::after {
+    border-image: linear-gradient(45deg, #ff00cc, #3333ff, #00ccff, #ff0066) 1;
+    transform: rotate(180deg);
+}
+
+.cards section:hover {
+    transform: scale(1.05); /* Aumenta a escala ao passar o mouse */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cards section:hover::before, .cards section:hover::after {
+    border-color: #fff; /* Muda a cor da borda ao passar o mouse */
+}
+
+.cards section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cards section h5 {
+    margin-bottom: 0.5rem;
+    color: #fff; 
+}
+.cards section p {
+    color: #f0f0f0; 
+    font-size: 0.9rem;
+    justify-content: center;
+}
+  
+  .cards section:first-child {
+    margin-left: 0;
+  }
+  .cards section a{
+    cursor: pointer;
+
+  }
+  .cards section  button {
+    padding: 0.5rem 1rem;
+    margin-top: 2rem;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(45deg, #ff00cc, #3333ff, #00ccff, #ff0066);
+    background-size: 400%;
+    transition: background-position 0.5s, transform 0.5s;
+}
+
+.cards section a button:hover {
+    background-position: 100%;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+  
+  .cards section.card1 button {
+    background-image: linear-gradient(45deg,   #003366,#027497, #00ffff);
+  }
+  
+  .cards section.card1 {
+    box-shadow: 7px 7px 5px 0px rgb(0, 0, 0,0.8);
+    border-radius: 2rem;
+  
+  
+  }
+  
+  @media screen and (max-width: 1400px) {
+    .cards{
+      margin-left: 10rem;
+      margin-right: 10rem;
+    }
+
+  }
+
+  @media screen and (max-width: 768px) {
+    .cards {
+      flex-direction: column;
+    }
+  
+    .cards section {
+      margin-left: 0;
+      margin-bottom: 32px;
+    }
+  
+    .cards section:last-child {
+      margin-bottom: 0;
+    }
+  
+    .cards section button {
+      font-size: 70%;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+  
+    .container.menuOpen {
+      transition: margin-top 0.5s;
+      margin-top: 13rem; 
+      overflow-y: none;
+      overflow-x: none;
+      
+    }
+  
+    .container{
+      overflow: none; 
+    }
+  }
+
+  
+  
+  
+  
