@@ -18,17 +18,19 @@ const Home = ({ menuOpen }) => {
   </section>
 
   <section className={styles.card1}>
+    <h3><span>CodePath</span></h3>
+    <p>É um projeto em grupo onde fizemos uma implementação mobile em python e flutter, onde buscamos ensinar programação de forma facil e gamificada para as pessoas.  </p>
+    <br/>  <a href="https://github.com/PedroFaria14"><button>Ver Mais</button></a>
+  </section>
+
+  <section className={styles.card1}>
     <h3><span>Chess-System-Java</span></h3>
     <p>O projeto é uma implementação completa do jogo de xadrez em Java, proporcionando uma experiência interativa e desafiadora.</p>
     <br/>  <a href="https://github.com/PedroFaria14/Chess-System-Java"><button>Ver Mais</button></a>
   </section>
 
-  <section className={styles.card1}>
-    <h3><span>New_Home</span></h3>
-    <p>
-    Projeto pessoal de um site de vendas de imóveis, oferecendo aos usuários uma ampla variedade de propriedades para compra.</p> <br/> <br/>
-   <br/> <br/><a href="https://github.com/PedroFaria14/New_Home"><button>Ver Mais</button></a>
-  </section>
+
+ 
 </main>
 </div>
 

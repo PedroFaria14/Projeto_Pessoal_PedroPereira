@@ -2,24 +2,30 @@ import React, { useState, useEffect } from 'react';
 import styles from './Projects.module.css';
 
 const Projects = ({ menuOpen }) => {
-  const [currentCard, setCurrentCard] = useState(0); // Estado para controlar o card atual
-  const [isMobile, setIsMobile] = useState(false); // Estado para verificar se a tela é móvel
+  const [currentCard, setCurrentCard] = useState(0); 
+  const [isMobile, setIsMobile] = useState(false); 
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768); // Define se a tela é móvel baseada na largura
+      setIsMobile(window.innerWidth < 768); 
     };
 
-    handleResize(); // Verifica o tamanho da tela ao montar o componente
+    handleResize(); 
 
-    window.addEventListener('resize', handleResize); // Adiciona um ouvinte de redimensionamento da tela
+    window.addEventListener('resize', handleResize); 
 
     return () => {
-      window.removeEventListener('resize', handleResize); // Remove o ouvinte ao desmontar o componente
+      window.removeEventListener('resize', handleResize); 
     };
   }, []);
 
   const cards = [
+     {
+      title: 'CodePath',
+      description: 'O projeto é um aplicativo mobile, com o objetivo de ensinar programação de forma gamificada para os usuários.',
+      link: 'https://github.com/PedroFaria14'
+    },
+
     {
       title: 'New_Home',
       description: 'O projeto é um site de vendas de imóveis. Buscando oferecer um ambiente dinâmico e facil para vender imóvel',

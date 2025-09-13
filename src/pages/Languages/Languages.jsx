@@ -18,7 +18,8 @@ import MongoDB from '../../Imgs/MongoDB.jpg';
 import Node from '../../Imgs/Node.jpg';
 import SpringBoot from '../../Imgs/SpringBoot.jpg';
 import Typescript from '../../Imgs/Typescript.jpg';
-
+import go from '../../Imgs/go.png';
+import docker from '../../Imgs/docker.png';
 
 
 const Languages = ({ menuOpen }) => {
@@ -44,6 +45,15 @@ const Languages = ({ menuOpen }) => {
         <img src={JavaScript} alt="JavaScript" className={styles.imagem} />
       </div>
 
+  
+        </section>
+
+        <section className={styles.card1}>
+        <div className={styles.container_IMG}>
+        <img src={go} alt="go" className={styles.imagem} />
+      </div>
+
+  
         </section>
         <section className={styles.card1}>
         <div className={styles.container_IMG}>
@@ -63,6 +73,13 @@ const Languages = ({ menuOpen }) => {
       </div>
 
         </section>
+ <section className={styles.card1}>
+        <div className={styles.container_IMG}>
+        <img src={docker} alt="docker" className={styles.imagem} />
+      </div>
+
+        </section>
+        
         <section className={styles.card1}>
         <div className={styles.container_IMG}>
         <img src={HTML} alt="HTML" className={styles.imagem} />
@@ -118,20 +135,6 @@ const Languages = ({ menuOpen }) => {
       </div>
 
         </section>
-
-       
-
-       
-
-       
-      
-
-
-
-
-       
-
-
 
     </main>
 </div>

@@ -15,17 +15,25 @@ const Courses = ({ menuOpen }) => {
             </p>
         </section>
 
-        <section className={styles.card1}>
-            <h5><b>Java 2023 Programação Orientada a Objetos</b></h5>
+         <section className={styles.card1}>
+            <h5><b>Go</b></h5>
             <p>
-                No curso de Programação Orientada a Objetos com Java em 2023 na Udemy, adquiri habilidades para desenvolver software modular e reutilizável, utilizando Java, MySQL, Eclipse, Hibernate e MongoDB. Através de projetos práticos, apliquei os conceitos.
+                Durante o curso de Go na Alura, adquiri conhecimentos em programação concorrente, manipulação de APIs e desenvolvimento de aplicações web, explorando na prática conceitos fundamentais da linguagem e seu uso em sistemas modernos.
             </p>
         </section>
 
+        
         <section className={styles.card1}>
             <h5><b>Curso Web Frontend</b></h5>
             <p>
                 No curso "Web Frontend Fundamentos HTML5, CSS3 e JS + 10 Projetos" na Udemy, aprendi os fundamentos essenciais para o desenvolvimento web. Com foco em HTML5, CSS3 e JavaScript, adquiri habilidades para criar páginas web interativas e responsivas.
+            </p>
+        </section>
+
+         <section className={styles.card1}>
+            <h5><b>Java 2023 Programação Orientada a Objetos</b></h5>
+            <p>
+                No curso de Programação Orientada a Objetos com Java em 2023 na Udemy, adquiri habilidades para desenvolver software modular e reutilizável, utilizando Java, MySQL, Eclipse, Hibernate e MongoDB. Através de projetos práticos, apliquei os conceitos.
             </p>
         </section>
 
@@ -37,14 +45,22 @@ const Courses = ({ menuOpen }) => {
         </section>
 
 
+<section className={styles.card1}>
+            <h5><b>Segurança de Endpoint</b></h5>
+            <p>
+                No curso deSegurança de Endpoint na cisco, desenvolvi habilidades para criar software modular e reutilizável.
+            </p>
+        </section>
 
         
-    <section className={styles.card1}>
-        <h5><b>java Web com JSP e MySQL</b></h5>
+ <section className={styles.card1}>
+        <h5><b>Introdução à Inteligência Artificial</b></h5>
         <p>
-        No curso "Java Web com JSP e MySQL", desenvolvi habilidades para criar aplicações web dinâmicas com JavaServer Pages (JSP) e MySQL. Através de projetos práticos, aprendi a utilizar Java para a lógica de negócios.
+        No curso Introdução à Inteligência Artificial no TIC em trilhas,desenvolvi habilidades para criar aplicações dinâmicas.
            </p>
     </section>
+
+  
     <section className={styles.card1}>
         <h5><b>Análise de Dados no Power BI</b></h5>
         <p>
@@ -73,7 +89,12 @@ const Courses = ({ menuOpen }) => {
 </section>
 
 
-
+  <section className={styles.card1}>
+        <h5><b>java Web com JSP e MySQL</b></h5>
+        <p>
+        No curso "Java Web com JSP e MySQL", desenvolvi habilidades para criar aplicações web dinâmicas com JavaServer Pages (JSP) e MySQL. Através de projetos práticos, aprendi a utilizar Java para a lógica de negócios.
+           </p>
+    </section>
 
 <section className={styles.card1}>
 <h5><b>SEGURANÇA EM TECNOLOGIA DA INFORMAÇÃO</b></h5>
